@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuepress 搭建静态博客 # | LS 技术笔记</title>
+    <meta name="description" content="***的 ****博客">
+    <link rel="icon" href="/Tech-Blog/img/logo.png">
+    
+    <link rel="preload" href="/Tech-Blog/assets/css/0.styles.b000b03d.css" as="style"><link rel="preload" href="/Tech-Blog/assets/js/app.f294543b.js" as="script"><link rel="preload" href="/Tech-Blog/assets/js/2.d5787a72.js" as="script"><link rel="preload" href="/Tech-Blog/assets/js/5.e3de4a6a.js" as="script"><link rel="prefetch" href="/Tech-Blog/assets/js/10.d8a6415b.js"><link rel="prefetch" href="/Tech-Blog/assets/js/11.50796b42.js"><link rel="prefetch" href="/Tech-Blog/assets/js/12.30a11b8c.js"><link rel="prefetch" href="/Tech-Blog/assets/js/13.bb426181.js"><link rel="prefetch" href="/Tech-Blog/assets/js/14.d10c5478.js"><link rel="prefetch" href="/Tech-Blog/assets/js/15.a98792e1.js"><link rel="prefetch" href="/Tech-Blog/assets/js/16.5dd8f4aa.js"><link rel="prefetch" href="/Tech-Blog/assets/js/17.22a5f8b2.js"><link rel="prefetch" href="/Tech-Blog/assets/js/18.e381a400.js"><link rel="prefetch" href="/Tech-Blog/assets/js/19.8e2531b4.js"><link rel="prefetch" href="/Tech-Blog/assets/js/20.8967ceb7.js"><link rel="prefetch" href="/Tech-Blog/assets/js/21.3f47c5ec.js"><link rel="prefetch" href="/Tech-Blog/assets/js/22.952fbe00.js"><link rel="prefetch" href="/Tech-Blog/assets/js/23.83c7a880.js"><link rel="prefetch" href="/Tech-Blog/assets/js/24.0e1f347e.js"><link rel="prefetch" href="/Tech-Blog/assets/js/25.d093ba42.js"><link rel="prefetch" href="/Tech-Blog/assets/js/26.293e31f2.js"><link rel="prefetch" href="/Tech-Blog/assets/js/27.a24f77d1.js"><link rel="prefetch" href="/Tech-Blog/assets/js/28.82b48802.js"><link rel="prefetch" href="/Tech-Blog/assets/js/29.e7c80ff1.js"><link rel="prefetch" href="/Tech-Blog/assets/js/3.483bdb5c.js"><link rel="prefetch" href="/Tech-Blog/assets/js/30.96f4158f.js"><link rel="prefetch" href="/Tech-Blog/assets/js/31.61df6fed.js"><link rel="prefetch" href="/Tech-Blog/assets/js/32.d78da158.js"><link rel="prefetch" href="/Tech-Blog/assets/js/33.86af2d65.js"><link rel="prefetch" href="/Tech-Blog/assets/js/34.57d3f385.js"><link rel="prefetch" href="/Tech-Blog/assets/js/35.a5aefaae.js"><link rel="prefetch" href="/Tech-Blog/assets/js/36.5e730d10.js"><link rel="prefetch" href="/Tech-Blog/assets/js/37.9a999869.js"><link rel="prefetch" href="/Tech-Blog/assets/js/38.beeb4e97.js"><link rel="prefetch" href="/Tech-Blog/assets/js/39.7b1b85f3.js"><link rel="prefetch" href="/Tech-Blog/assets/js/4.2eb36130.js"><link rel="prefetch" href="/Tech-Blog/assets/js/40.ba5d4a59.js"><link rel="prefetch" href="/Tech-Blog/assets/js/41.2a45eed4.js"><link rel="prefetch" href="/Tech-Blog/assets/js/42.462cb0a5.js"><link rel="prefetch" href="/Tech-Blog/assets/js/43.2441534b.js"><link rel="prefetch" href="/Tech-Blog/assets/js/44.51d8245d.js"><link rel="prefetch" href="/Tech-Blog/assets/js/45.5de71fb8.js"><link rel="prefetch" href="/Tech-Blog/assets/js/46.1ab94fbc.js"><link rel="prefetch" href="/Tech-Blog/assets/js/6.93a33558.js"><link rel="prefetch" href="/Tech-Blog/assets/js/7.6a322f8c.js"><link rel="prefetch" href="/Tech-Blog/assets/js/8.7d66006c.js"><link rel="prefetch" href="/Tech-Blog/assets/js/9.d65667e2.js">
+    <link rel="stylesheet" href="/Tech-Blog/assets/css/0.styles.b000b03d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Tech-Blog/" class="home-link router-link-active"><!----> <span class="site-name">LS 技术笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/HTMLCSS/" class="nav-link">HTML+CSS</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/JS/" class="nav-link">JS</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/PHP/" class="nav-link">PHP</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/Another/" class="nav-link router-link-active">其他</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Frame/VUE/" class="nav-link">VUE</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Frame/thinkPHP/" class="nav-link">thinkPHP</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Frame/Layui/" class="nav-link">layui</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台" class="dropdown-title"><span class="title">后台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Backstage/Node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Backstage/Express/" class="nav-link">express</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Thought/" class="nav-link">MySql</a></li></ul></div></div><div class="nav-item"><a href="/Tech-Blog/Thought/" class="nav-link">项目</a></div><div class="nav-item"><a href="/Tech-Blog/FAQ/" class="nav-link">链接</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/MySelf.html" class="nav-link">MySelf</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/Project.html" class="nav-link">Project</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/Fillory.html" class="nav-link">Fillory</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/Review.html" class="nav-link">Review</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/HTMLCSS/" class="nav-link">HTML+CSS</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/JS/" class="nav-link">JS</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/PHP/" class="nav-link">PHP</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Basic/Another/" class="nav-link router-link-active">其他</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架" class="dropdown-title"><span class="title">框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Frame/VUE/" class="nav-link">VUE</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Frame/thinkPHP/" class="nav-link">thinkPHP</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Frame/Layui/" class="nav-link">layui</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台" class="dropdown-title"><span class="title">后台</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Backstage/Node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Backstage/Express/" class="nav-link">express</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Thought/" class="nav-link">MySql</a></li></ul></div></div><div class="nav-item"><a href="/Tech-Blog/Thought/" class="nav-link">项目</a></div><div class="nav-item"><a href="/Tech-Blog/FAQ/" class="nav-link">链接</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/MySelf.html" class="nav-link">MySelf</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/Project.html" class="nav-link">Project</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/Fillory.html" class="nav-link">Fillory</a></li><li class="dropdown-item"><!----> <a href="/Tech-Blog/Another/Review.html" class="nav-link">Review</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML+CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>PHP</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>其他</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Tech-Blog/Basic/Another/A000.html" class="sidebar-link">其他</a></li><li><a href="/Tech-Blog/Basic/Another/Vuepress01.html" class="active sidebar-link">Vuepress搭建博客</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Tech-Blog/Basic/Another/Vuepress01.html#_1-快速搭建博客" class="sidebar-link">1.快速搭建博客</a></li><li class="sidebar-sub-header"><a href="/Tech-Blog/Basic/Another/Vuepress01.html#_2-config-js基本配置" class="sidebar-link">2.config.js基本配置</a></li><li class="sidebar-sub-header"><a href="/Tech-Blog/Basic/Another/Vuepress01.html#_3-添加head配置和自定义样式" class="sidebar-link">3.添加head配置和自定义样式</a></li><li class="sidebar-sub-header"><a href="/Tech-Blog/Basic/Another/Vuepress01.html#_4-挂载github" class="sidebar-link">4.挂载GitHub</a></li><li class="sidebar-sub-header"><a href="/Tech-Blog/Basic/Another/Vuepress01.html#编写一个deploy-sh的脚本文件" class="sidebar-link">编写一个deploy.sh的脚本文件</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuepress-搭建静态博客"><a href="#vuepress-搭建静态博客" class="header-anchor">#</a> Vuepress 搭建静态博客</h1> <ul><li><a href="https://www.vuepress.cn/" target="_blank" rel="noopener noreferrer">VuePress 中文文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://vuepress.vuejs.org/zh/plugin/official/plugin-search.html" target="_blank" rel="noopener noreferrer">VuepPress官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://blog.csdn.net/qq_30227429/article/details/80567745" target="_blank" rel="noopener noreferrer">使用VuePress搭建一个类型element ui文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://blog.csdn.net/HookJony/article/details/82027550" target="_blank" rel="noopener noreferrer">Vuepress搭建带有评论系统的博客<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>本文参考地址: <a href="https://segmentfault.com/a/1190000017890986" target="_blank" rel="noopener noreferrer">VuePress博客搭建笔记<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="_1-快速搭建博客"><a href="#_1-快速搭建博客" class="header-anchor">#</a> 1.快速搭建博客</h2> <p>1、安装</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> global <span class="token function">add</span> vuepress <span class="token comment">#或者： npm install -g vuepress</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2、 新建一个项目文件夹，并且初始化</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">mkdir</span> myblog  <span class="token comment">#创建一个项目myblog</span>
+<span class="token builtin class-name">cd</span> myblog   <span class="token comment">#进入这个目录</span>
+<span class="token function">npm</span> init -y <span class="token comment">#初始化项目</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>在package.json里面加入一些脚本：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;script&quot;</span><span class="token punctuation">:</span><span class="token punctuation">{</span>
+        <span class="token string">&quot;dev&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;build&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;vuepress build docs&quot;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>运行程序：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> dev <span class="token comment"># 或者：npm run dev</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>生成静态的HTML文件：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">yarn</span> build <span class="token comment"># 或者：npm run build</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>默认情况下，文件将会被生成在 <code>.vuepress/dist</code>，当然，你也可以通过 <code>.vuepress/config.js</code>中的 <code>dest</code> 字段来修改，生成的文件可以部署到任意的静态文件服务器上.</p> <p>3、创建博客相关目录
+在myblog目录下新建docs目录，在docs目录里新建.vuepress文件夹，然后在里面创建config.js文件 用于存放配置信息</p> <p>4、在docs目录里面创建一个README.md的文件，输入内容</p> <div class="language-markdown line-numbers-mode"><pre class="language-markdown"><code>/docs/README.md
+
+<span class="token hr punctuation">---</span>
+home: true
+heroImage: /img/logo.jpg
+heroText: Wiki 1001
+tagline: Meet 1000 Books &amp; Unit Them Into 1 Wiki
+actionText: Get Wiki →
+actionLink: /FAQ/
+features:
+<span class="token list punctuation">-</span> title: Wiki - 求索
+  details: 基于书签对知识点进行 整理，吸收，吐纳，归档。吾将上下而求索...
+<span class="token list punctuation">-</span> title: Store - 仓库
+  details: 展望云仓库而归纳整理，方便行事&amp;培养习惯。鱼和熊掌我全都要...
+<span class="token list punctuation">-</span> title: Thought - 随笔
+  details: 活着，是一件最能带来满足感的事。细细琢磨吧，人生啊，有意思的很...
+<span class="token title important">footer: MIT Licensed | Copyright © 2019.01.11-present Mulander-J
+<span class="token punctuation">---</span></span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p>图片等静态资源要放到public</p></div> <p><img src="/Tech-Blog/assets/img/002.3813aefb.jpg" alt="blog-home"></p> <p>此时，项目的目录结构为：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>project
+├─── docs
+│   ├── README.md
+│   └── .vuepress
+│       ├── dist
+│       ├── public
+│       └── config.js
+└── package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>不管使用哪种方式，最终的项目结构应该和上面一样。</p> <ul><li>docs文件夹是你的根目录，也是vuepress要去解析的文件夹，</li> <li>docs下的README.md可以理解为首页页面。</li> <li>docs下的.vuepress是一些配置文件，这里可以存放图片等静态资源，一些主题配置，自定义组件等等</li></ul> <p>5、运行博客
+在终端启动命令</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">npm</span> run dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_2-config-js基本配置"><a href="#_2-config-js基本配置" class="header-anchor">#</a> 2.config.js基本配置</h2> <p>js基本配置：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'米加蓝的技术博客 '</span><span class="token punctuation">,</span> <span class="token comment">// 页签标题 # | Wiki 1001</span>
+    description<span class="token punctuation">:</span> <span class="token string">'欢迎来到我的博客'</span><span class="token punctuation">,</span> <span class="token comment">// meta 中的描述文字，意义不大，SEO用</span>
+<span class="token comment">// 注入到当前页面的 HTML &lt;head&gt; 中的标签</span>
+    head<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token comment">// 增加一个自定义的 favicon(网页标签的图标)</span>
+        <span class="token comment">// 这里的 '/' 指向 docs/.vuepress/public 文件目录 </span>
+        <span class="token comment">// 即 docs/.vuepress/public/img/geass-bg.ico</span>
+        <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span> href<span class="token punctuation">:</span> <span class="token string">'/img/geass-bg.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    base<span class="token punctuation">:</span> <span class="token string">'/Tech-Blog/'</span><span class="token punctuation">,</span> <span class="token comment">// 这是部署到github相关的配置  Repository name 和这里对应 </span>
+    markdown<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        lineNumbers<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment">// 代码块显示行号</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>config.js中继续配置主题参数 <strong>顶部导航栏</strong></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        sidebarDepth<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token comment">// 将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。</span>
+        lastUpdated<span class="token punctuation">:</span> <span class="token string">'Last Updated'</span> <span class="token punctuation">,</span><span class="token comment">// 文档更新时间：每个文件git最后提交的时间,</span>
+        <span class="token comment">// 顶部导航栏</span>
+        nav<span class="token punctuation">:</span><span class="token punctuation">[</span>
+             <span class="token comment">// 单项 text：显示文字，link：指向链接</span>
+             <span class="token comment">// 这里的'/' 指的是 docs文件夹路径</span>
+             <span class="token comment">// [以 '/' 结尾的默认指向该路径下README.md文件]</span>
+            <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'求索'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/FAQ/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token comment">// http://localhost:8080/Wiki1001Pro/FAQ/</span>
+            <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'仓库'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/Store/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'随笔'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/Thought/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token comment">// 多项，下拉形式</span>
+            <span class="token punctuation">{</span>
+                text<span class="token punctuation">:</span> <span class="token string">'Concat'</span><span class="token punctuation">,</span>
+                items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token comment">// link：指向链接也可以是外网链接</span>
+                    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'Segmentfault'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://segmentfault.com/u/mulander'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                text<span class="token punctuation">:</span> <span class="token string">'GitHub'</span><span class="token punctuation">,</span>
+                items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'GitHub首页'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://github.com/Mulander-J'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'Island'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://mulander-j.github.io/island/code/html/index.html'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'TimeWaster'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://mulander-j.github.io/timeWaster/demo/index.html#/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>config.js中继续配置主题参数 <strong>侧边栏</strong></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+   <span class="token operator">...</span>
+   themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+   <span class="token operator">...</span>
+    <span class="token comment">// 侧边栏菜单( 一个模块对应一个菜单形式 )</span>
+    sidebar<span class="token punctuation">:</span><span class="token punctuation">{</span>
+         <span class="token comment">// 打开FAQ主页链接时生成下面这个菜单</span>
+        <span class="token string">'/FAQ/'</span><span class="token punctuation">:</span><span class="token punctuation">[</span>
+            <span class="token comment">//多级菜单形式</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">// 菜单名</span>
+                title<span class="token punctuation">:</span> <span class="token string">'消化堆'</span><span class="token punctuation">,</span>
+                <span class="token comment">// 子菜单</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token comment">// ['','']=&gt;[路径,标题]</span>
+                    <span class="token comment">// 或者写成 '路径',标题自动识别为该地址的文件中的h1标题</span>
+                    <span class="token comment">// 不以 '/' 结尾的就是指向.md文件             </span>
+                    <span class="token punctuation">[</span><span class="token string">'/FAQ/DigestionHeap/Digested'</span><span class="token punctuation">,</span><span class="token string">'消化过'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// '/FAQ/DigestionHeap/Digested.md'文件</span>
+                    <span class="token punctuation">[</span><span class="token string">'/FAQ/DigestionHeap/Digesting'</span><span class="token punctuation">,</span><span class="token string">'消化中'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">[</span><span class="token string">'/FAQ/DigestionHeap/DigestWill'</span><span class="token punctuation">,</span><span class="token string">'待消化'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                title<span class="token punctuation">:</span> <span class="token string">'输出层'</span><span class="token punctuation">,</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">[</span><span class="token string">'/FAQ/Console/A001'</span><span class="token punctuation">,</span><span class="token string">'#A001_VuePress'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">[</span><span class="token string">'/FAQ/Console/A002'</span><span class="token punctuation">,</span><span class="token string">'#A002_插件清单'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token string">'/FAQ/'</span><span class="token punctuation">,</span><span class="token string">'百科首页'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token string">'/FAQ/Pool/SkillStack'</span><span class="token punctuation">,</span><span class="token string">'技术栈'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">[</span><span class="token string">'/FAQ/Pool/Review'</span><span class="token punctuation">,</span><span class="token string">'归去来'</span><span class="token punctuation">]</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token comment">// 打开Thought主页链接时生成下面这个菜单</span>
+        <span class="token string">'/Thought/'</span><span class="token punctuation">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">[</span><span class="token string">'/Thought/'</span><span class="token punctuation">,</span><span class="token string">'随笔首页'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                title<span class="token punctuation">:</span> <span class="token string">'游记'</span><span class="token punctuation">,</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">[</span><span class="token string">'/Thought/Travels/beiPing'</span><span class="token punctuation">,</span><span class="token string">'北平游记'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                title<span class="token punctuation">:</span> <span class="token string">'年终回顾'</span><span class="token punctuation">,</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                   <span class="token punctuation">[</span><span class="token string">'/Thought/YearReview/2018'</span><span class="token punctuation">,</span><span class="token string">'2018年'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                   <span class="token punctuation">[</span><span class="token string">'/Thought/YearReview/2019'</span><span class="token punctuation">,</span><span class="token string">'2019年'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token comment">// 打开Store主页链接时生成下面这个菜单</span>
+        <span class="token string">'/Store/'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span><span class="token string">'仓库首页'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                title<span class="token punctuation">:</span> <span class="token string">'应用'</span><span class="token punctuation">,</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">[</span><span class="token string">'/Store/Apps/DownDoors'</span><span class="token punctuation">,</span> <span class="token string">'下载门户'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">[</span><span class="token string">'/Store/Apps/OwnTest'</span><span class="token punctuation">,</span> <span class="token string">'博主测评'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                title<span class="token punctuation">:</span> <span class="token string">'电影'</span><span class="token punctuation">,</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">[</span><span class="token string">'/Store/Films/'</span><span class="token punctuation">,</span><span class="token string">'收藏级电影'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+                title<span class="token punctuation">:</span> <span class="token string">'动画'</span><span class="token punctuation">,</span>
+                children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                    <span class="token punctuation">[</span><span class="token string">'/Store/Anime/'</span><span class="token punctuation">,</span><span class="token string">'收藏级动画'</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br></div></div><div class="custom-block danger"><p class="custom-block-title">注意事项</p> <ul><li>和<strong>图标/图片</strong>等静态资源相关的 其 '/'  默认指向的是 <strong>docs/.vuepress/public/</strong></li> <li>和<strong>侧边栏/导航栏</strong>相关的地址配置 其 '/'  默认指向的是 <strong>docs/</strong></li> <li>侧边栏/导航栏指向.md文件的需要<strong>先建立相关.md文件</strong>，不然会报404或者页面空白</li></ul></div> <h2 id="_3-添加head配置和自定义样式"><a href="#_3-添加head配置和自定义样式" class="header-anchor">#</a> 3.添加head配置和自定义样式</h2> <p>自定义样式可以放到.vuepress/styles/index.styl下</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>.theme-default-content 
+  h1
+    border-bottom  3px solid rgb<span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">172</span>, <span class="token number">193</span><span class="token punctuation">)</span>
+    padding 20px 0px 20px 0px
+    font-size 24px
+
+ 
+.theme-default-content 
+  h2
+    border-bottom  2px solid rgb<span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">172</span>, <span class="token number">193</span><span class="token punctuation">)</span>
+    padding 15px 0px 15px 0px<span class="token punctuation">;</span>
+    font-size 20px
+ 
+.theme-default-content 
+  p 
+    margin: 15px 0px 15px 0px<span class="token punctuation">;</span>
+
+
+/* PrismJS <span class="token number">1.17</span>.1
+https://prismjs.com/download.html<span class="token comment">#themes=prism-okaidia&amp;languages=markup+css+clike+javascript */</span>
+/**
+ * okaidia theme <span class="token keyword">for</span> JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code<span class="token punctuation">[</span>class*<span class="token operator">=</span><span class="token string">&quot;language-&quot;</span><span class="token punctuation">]</span>,
+pre<span class="token punctuation">[</span>class*<span class="token operator">=</span><span class="token string">&quot;language-&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+	color: <span class="token comment">#f8f8f2;</span>
+	background: none<span class="token punctuation">;</span>
+	text-shadow: <span class="token number">0</span> 1px rgba<span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	font-family: Consolas, Monaco, <span class="token string">'Andale Mono'</span>, <span class="token string">'Ubuntu Mono'</span>, monospace<span class="token punctuation">;</span>
+	font-size: 1em<span class="token punctuation">;</span>
+	text-align: left<span class="token punctuation">;</span>
+	white-space: pre<span class="token punctuation">;</span>
+	word-spacing: normal<span class="token punctuation">;</span>
+	word-break: normal<span class="token punctuation">;</span>
+	word-wrap: normal<span class="token punctuation">;</span>
+	line-height: <span class="token number">1.5</span><span class="token punctuation">;</span>
+
+	-moz-tab-size: <span class="token number">4</span><span class="token punctuation">;</span>
+	-o-tab-size: <span class="token number">4</span><span class="token punctuation">;</span>
+	tab-size: <span class="token number">4</span><span class="token punctuation">;</span>
+
+	-webkit-hyphens: none<span class="token punctuation">;</span>
+	-moz-hyphens: none<span class="token punctuation">;</span>
+	-ms-hyphens: none<span class="token punctuation">;</span>
+	hyphens: none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+/* Code blocks */
+pre<span class="token punctuation">[</span>class*<span class="token operator">=</span><span class="token string">&quot;language-&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+	padding: 1em<span class="token punctuation">;</span>
+	margin: .5em <span class="token number">0</span><span class="token punctuation">;</span>
+	overflow: auto<span class="token punctuation">;</span>
+	border-radius: <span class="token number">0</span>.3em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+:not<span class="token punctuation">(</span>pre<span class="token punctuation">)</span> <span class="token operator">&gt;</span> code<span class="token punctuation">[</span>class*<span class="token operator">=</span><span class="token string">&quot;language-&quot;</span><span class="token punctuation">]</span>,
+pre<span class="token punctuation">[</span>class*<span class="token operator">=</span><span class="token string">&quot;language-&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+	background: <span class="token comment">#272822;</span>
+<span class="token punctuation">}</span>
+
+/* Inline code */
+:not<span class="token punctuation">(</span>pre<span class="token punctuation">)</span> <span class="token operator">&gt;</span> code<span class="token punctuation">[</span>class*<span class="token operator">=</span><span class="token string">&quot;language-&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">{</span>
+	padding: .1em<span class="token punctuation">;</span>
+	border-radius: .3em<span class="token punctuation">;</span>
+	white-space: normal<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata <span class="token punctuation">{</span>
+	color: slategray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.token.punctuation <span class="token punctuation">{</span>
+	color: <span class="token comment">#f8f8f2;</span>
+<span class="token punctuation">}</span>
+
+.namespace <span class="token punctuation">{</span>
+	opacity: .7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted <span class="token punctuation">{</span>
+	color: <span class="token comment">#f92672;</span>
+<span class="token punctuation">}</span>
+
+.token.boolean,
+.token.number <span class="token punctuation">{</span>
+	color: <span class="token comment">#ae81ff;</span>
+<span class="token punctuation">}</span>
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted <span class="token punctuation">{</span>
+	color: <span class="token comment">#a6e22e;</span>
+<span class="token punctuation">}</span>
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable <span class="token punctuation">{</span>
+	color: <span class="token comment">#f8f8f2;</span>
+<span class="token punctuation">}</span>
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name <span class="token punctuation">{</span>
+	color: <span class="token comment">#e6db74;</span>
+<span class="token punctuation">}</span>
+
+.token.keyword <span class="token punctuation">{</span>
+	color: <span class="token comment">#66d9ef;</span>
+<span class="token punctuation">}</span>
+
+.token.regex,
+.token.important <span class="token punctuation">{</span>
+	color: <span class="token comment">#fd971f;</span>
+<span class="token punctuation">}</span>
+
+.token.important,
+.token.bold <span class="token punctuation">{</span>
+	font-weight: bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+.token.italic <span class="token punctuation">{</span>
+	font-style: italic<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+.token.entity <span class="token punctuation">{</span>
+	cursor: <span class="token builtin class-name">help</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br></div></div><h2 id="_4-挂载github"><a href="#_4-挂载github" class="header-anchor">#</a> 4.挂载GitHub</h2> <ul><li><p>建立一个公有仓库 ： https://github.com/quanquanmama/Tech-Blog.git</p></li> <li><p>在 <strong>setting</strong> 里设置好github-page属性
+config.js 中 base: '/Tech-Blog/', // 这是部署到github相关的配置  Repository name 和这里对应
+<img src="/Tech-Blog/assets/img/003.9a6a1ece.png" alt="上传到git上"></p></li> <li><p>将build获得地dist文件夹上传至github
+<img src="/Tech-Blog/assets/img/004.45271953.png" alt="public">
+访问https://quanquanmama.github.io/Tech-Blog/</p></li></ul> <h2 id="编写一个deploy-sh的脚本文件"><a href="#编写一个deploy-sh的脚本文件" class="header-anchor">#</a> 编写一个deploy.sh的脚本文件</h2> <p>在项目的根目录下新建一个deploy.sh的文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token shebang important">#!/usr/bin/env sh</span>
+
+<span class="token comment"># 确保脚本抛出遇到的错误</span>
+<span class="token builtin class-name">set</span> -e
+
+<span class="token comment"># 生成静态文件</span>
+<span class="token function">npm</span> run build
+
+<span class="token comment"># 进入生成的文件夹</span>
+<span class="token builtin class-name">cd</span> dist
+
+<span class="token function">git</span> init
+<span class="token function">git</span> <span class="token function">add</span> -A
+<span class="token function">git</span> commit -m <span class="token string">'deploy'</span>
+
+<span class="token comment"># 如果发布到 https://&lt;USERNAME&gt;.github.io  填写你刚刚创建的仓库地址</span>
+<span class="token function">git</span> push -f https://github.com/quanquanmama/Tech-Blog.git master
+
+<span class="token builtin class-name">cd</span> -
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>在git bash中运行deploy.sh文件（原理就是将上传的命令写到一个.sh中）</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Tech-Blog/Basic/Another/A000.html" class="prev">其他</a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Tech-Blog/assets/js/app.f294543b.js" defer></script><script src="/Tech-Blog/assets/js/2.d5787a72.js" defer></script><script src="/Tech-Blog/assets/js/5.e3de4a6a.js" defer></script>
+  </body>
+</html>
